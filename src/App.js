@@ -5,13 +5,13 @@ export default function App() {
   let [numero, setNummer] = useState(0)
 
   function (aumentar){
-    setNummer(Nummer+1)
+    setNummer(++Nummer)
   }
   function (diminuir){
-    setNummer(Nummer-1)
+    setNummer(--Nummer)
   }
   function (zerar){
-    Nummer-=Nummer
+    Nummer(-=Nummer)
   }
 
   return <section>
@@ -19,6 +19,7 @@ export default function App() {
     <p>{numero}</p>
     <button onClick={diminuir}>Plus</button>
     <botton onClick={aumentar}>Minus</botton>
+    <button onClick= {zerar}>Null</button>
   </section>
    
 }
